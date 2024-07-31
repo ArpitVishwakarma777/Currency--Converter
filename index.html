@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertor</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body style="background-color: rgb(252, 192, 113)">
+   
+   
+    <div class="main">
+      <h2 style="margin-left: 10px;">Currency Converter</h1>
+      
+      <input id="inn"    placeholder="Enter Amount" type="text" />  
+
+      <div class="cvtr">
+        <div class="first">
+          <p>FROM</p>
+         <div class="select-container">
+        <img  class="flag" src="https://flagsapi.com/US/flat/64.png">
+          <select id="from" > 
+         </select></div> 
+        </div>
+        <div class="Second">
+          <!-- <img src="" alt="ero"> -->
+          <span class="material-symbols-outlined"> sync_alt </span>
+        </div>
+        <div class="Third">
+          <p>TO</p>
+          <div class="select-container">
+            <img class="flag" src="https://flagsapi.com/IN/flat/64.png">
+          <select id="to"> <option value="USD">USD</option>
+            <option value="INR" selected>INR</option>
+            <option value="EUR">EUR</option>
+            <option value="AUD">AUD</option>
+          </select>
+        </div>
+        </div>
+      </div>
+      <div class="msg">1USD = 80INR </div>
+      <button class="btn"></button>
+    </div>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

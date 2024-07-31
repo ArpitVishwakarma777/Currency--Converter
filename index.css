@@ -1,0 +1,117 @@
+/* .cvtr {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-around;
+}
+
+.main {
+  width: 27vw;
+  height: 50vh;
+  background: white;
+  position: absolute;
+  margin: 25vh 35vw;
+  border-radius: 20px;
+}
+#inn{ position: relative;
+    margin-left: 30px;
+}
+#lbl{
+  position: relative;
+  margin-left: 30px;
+  font-weight: 700;
+  font-size: large;
+}
+.Second span{
+padding-top: 20px;
+}
+.select-container{
+  display: flex;
+  flex-direction: column;
+} */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.main {
+  padding: 1rem;
+  background-color: aliceblue;
+  border-radius: 1rem;
+  min-height: 45vh;
+  width: 30vw;
+  padding-right: 2rem;
+}
+input,
+select,
+button {
+  width: 100%;
+
+  border: none;
+}
+body input {
+  border-radius: 1rem;
+  margin-top: 0.75rem;
+  border: 1px solid lightgray;
+  padding-left: 0.75rem;
+  height: 3rem;
+  /* background: #d1c3c3; */
+}
+
+.cvtr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+.select-container select {
+  border-radius: 1rem;
+}
+.select-container {
+  display: flex;
+  justify-content: space-evenly;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  background-color: white;
+  flex-direction: row;
+  padding-left: 0.5rem;
+  width: 6rem;
+  margin-top: 5px;
+}
+.msg {
+  margin: 2rem 0 2rem 0;
+  font-size: large;
+  font-weight: 700;
+}
+.btn {
+  content: "Get Exchange Rate";
+  background-color: rgb(184, 107, 19);
+  border-radius: 1rem;
+  color: white;
+  font-weight: 700;
+  height: 2rem;
+  font-size: large;
+  cursor: pointer;
+}
+@media (min-width: 591px) {
+  .btn::after {
+    content: "Get Exchange Rate";
+  }
+}
+
+@media (max-width: 590px) {
+  .btn::after {
+    content: "Exchange";
+  }
+}
