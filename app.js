@@ -40,8 +40,8 @@ async function ExchangeRate() {
   let fromSelect = document.getElementById("from");
   let FromSValue = fromSelect.value;
   let URL = `https://v6.exchangerate-api.com/v6/a361d5167580b3fbbd91cfaf/latest/${FromSValue}`;
-  let respones = await fetch(URL);
-  let data = await respones.json();
+  let respone = await fetch(URL);//first promise
+  let data = await respones.json();//second promise
   // console.log(data);
   let toSelect = document.getElementById("to");
   let toSValue = toSelect.value;
